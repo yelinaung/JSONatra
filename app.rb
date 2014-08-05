@@ -10,6 +10,6 @@ get '/:name' do
   if params[:name].nil? then 
     File.readlines(params[:name])
   else
-    "File not found"
+  	status 400
   end
 end
