@@ -10,6 +10,6 @@ get '/:name' do
   if params[:name].nil? then 
     File.readlines(params[:name])
   else
-  	status 400
+  	status 404
   end
 end
